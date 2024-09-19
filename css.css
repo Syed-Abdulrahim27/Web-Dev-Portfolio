@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  padding: 10px 20px;
+}
+
+.navbar .logo a {
+  color: white;
+  text-decoration: none;
+  font-size: 24px;
+  font-weight: bold;
+}
+.navbar .logo a:hover {
+  color: yellow;
+}
+
+.nav-links {
+  list-style-type: none;
+  display: flex;
+}
+
+.nav-links li {
+  margin: 0 15px;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+}
+
+.nav-links a:hover {
+  color: yellow;
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    display: none;
+    flex-direction: column;
+    background-color: #333;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    width: 200px;
+    text-align: right;
+  }
+
+  .nav-links li {
+    margin: 10px 0;
+  }
+}
+label {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  color: #333;
+  margin-right: 10px;
+}
+
+select {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  padding: 5px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+}
+
+select:hover {
+  border-color: #888;
+}
+
+select:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+.body {
+  background-color: rgb(255, 25, 0);
+  height: 650px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
+
+  border-bottom-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+}
+.img {
+  text-align: center;
+  margin-top: 10px;
+}
+.name {
+  font-weight: bold;
+  font-size: xx-large;
+  color: white;
+}
+.details h3 {
+  color: white;
+  margin-top: 10px;
+}
+.icons {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+}
+.icons i {
+  margin-right: 10px;
+  font-size: larger;
+  color: white;
+}
+.icons i:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+  color: black;
+}
+.body-2 {
+  display: flex;
+  justify-content: space-around;
+  text-align: center;
+}
+.Courses {
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+}
+.Courses h2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Courses li {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+.Awards {
+  background-color: rgb(44, 188, 59);
+  border-radius: 20px;
+  padding: 10px;
+}
+.Awards h2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Awards li {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+.Projects {
+  background-color: rgb(235, 170, 56);
+  border-radius: 20px;
+  padding: 10px;
+}
+.Projects h2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.Projects li {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+.certifs {
+  background-color: rgb(48, 189, 245);
+  border-radius: 20px;
+  padding: 10px;
+}
+.certifs h2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.certifs li {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
+.edu {
+  background-color: black;
+  border-radius: 20px;
+  padding: 10px;
+  margin-top: 10px;
+}
+.edu h2 {
+  color: white;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.edu li {
+  color: white;
+  text-align: center;
+  margin-top: 5px;
+}
