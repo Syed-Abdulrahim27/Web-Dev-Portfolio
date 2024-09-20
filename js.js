@@ -85,3 +85,15 @@ const profileData = {
   ],
   portfolioVideo: "https://www.youtube.com/watch?v=Ez8F0nW6S-w",
 };
+// Populate profile
+document.getElementById("name").textContent = profileData.name;
+document.getElementById("job").textContent = profileData.job;
+document.getElementById("profile-pic").src = profileData.profilePic;
+document.getElementById("profile-pic").alt = "Profile Pic";
+
+document.getElementById("instagram").parentElement.href =
+  profileData.socialLinks.instagram;
+document.getElementById("linkedin").parentElement.href =
+  profileData.socialLinks.linkedin;
+document.getElementById("github").parentElement.href =
+  profileData.socialLinks.github;
