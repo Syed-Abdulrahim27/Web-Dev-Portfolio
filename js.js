@@ -122,3 +122,11 @@ profileData.projects.forEach((project) => {
   li.textContent = project;
   projectsList.appendChild(li);
 });
+
+// Populate Awards
+const awardsList = document.getElementById("awards");
+profileData.awards.forEach((award) => {
+  const li = document.createElement("li");
+  li.textContent = award;
+  awardsList.appendChild(li);
+});
