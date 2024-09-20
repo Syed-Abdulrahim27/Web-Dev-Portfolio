@@ -138,3 +138,5 @@ profileData.certifications.forEach((cert) => {
   li.textContent = cert;
   certsList.appendChild(li);
 });
+// Populate Portfolio Video
+document.getElementById("portfolio-video").src = profileData.portfolioVideo;
