@@ -114,3 +114,11 @@ profileData.courses.forEach((course) => {
   li.textContent = course;
   coursesList.appendChild(li);
 });
+
+// Populate Projects
+const projectsList = document.getElementById("projects");
+profileData.projects.forEach((project) => {
+  const li = document.createElement("li");
+  li.textContent = project;
+  projectsList.appendChild(li);
+});
