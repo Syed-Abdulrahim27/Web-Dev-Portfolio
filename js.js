@@ -130,3 +130,11 @@ profileData.awards.forEach((award) => {
   li.textContent = award;
   awardsList.appendChild(li);
 });
+
+// Populate Certifications
+const certsList = document.getElementById("certifications");
+profileData.certifications.forEach((cert) => {
+  const li = document.createElement("li");
+  li.textContent = cert;
+  certsList.appendChild(li);
+});
