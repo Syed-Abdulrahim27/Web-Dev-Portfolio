@@ -12,11 +12,16 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <script src="https://unpkg.com/scrollreveal"></script>
   </head>
   <body>
+    <!-- Navbar -->
     <nav class="navbar">
-      <div class="logo">
+      <div class="nav_logo">
         <a href="#">Profile</a>
+      </div>
+      <div class="nav_menu_btn" id="menu-btn">
+        <i class="fa-solid fa-bars"></i>
       </div>
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
@@ -26,11 +31,13 @@
       </ul>
       <label for="languages">Choose a language:</label>
       <select id="languages" name="languages">
+        <option value="en">English</option>
         <option value="ar">Arabic</option>
-        <option value="ur">English</option>
         <option value="fr">French</option>
       </select>
     </nav>
+
+    <!-- Main Content -->
     <div class="body">
       <div class="img">
         <img
@@ -50,41 +57,63 @@
         </div>
         <div class="edu">
           <h2>Education</h2>
-          <li>A-Levels from KIMS</li>
-          <li>BSCS in Computer Science</li>
-          <li>Masters in Computer Science</li>
+          <ul>
+            <li>A-Levels from KIMS</li>
+            <li>BSCS in Computer Science</li>
+            <li>Masters in Computer Science</li>
+          </ul>
         </div>
       </div>
       <div class="body-2">
         <div class="Courses">
           <h2>Short Courses</h2>
-          <li>HTML/CSS</li>
-          <li>Javascript</li>
-          <li>React</li>
-          <li>Mobile App Development</li>
+          <ul>
+            <li>HTML/CSS</li>
+            <li>Javascript</li>
+            <li>React</li>
+            <li>Mobile App Development</li>
+          </ul>
         </div>
         <div class="Projects">
           <h2>Projects</h2>
-          <li>Snake Game</li>
-          <li>Face Detection</li>
-          <li>SockeProgramming</li>
-          <li>Flight schedule Mobile App</li>
+          <ul>
+            <li>Snake Game</li>
+            <li>Face Detection</li>
+            <li>Socket Programming</li>
+            <li>Flight Schedule Mobile App</li>
+          </ul>
         </div>
         <div class="Awards">
           <h2>Awards</h2>
-          <li>Hackathon Prizes</li>
-          <li>Google Code Jam / Kick Start</li>
-          <li>Microsoft Imagine Cup</li>
-          <li>TopCoder Open</li>
+          <ul>
+            <li>Hackathon Prizes</li>
+            <li>Google Code Jam / Kick Start</li>
+            <li>Microsoft Imagine Cup</li>
+            <li>TopCoder Open</li>
+          </ul>
         </div>
         <div class="certifs">
           <h2>Certifications</h2>
-          <li>Oracle Certified Professional: Java SE</li>
-          <li>Cloud Computing</li>
-          <li>Cybersecurity</li>
-          <li>Microsoft Certified: Azure AI Engineer Associate</li>
+          <ul>
+            <li>Oracle Certified Professional: Java SE</li>
+            <li>Cloud Computing</li>
+            <li>Cybersecurity</li>
+            <li>Microsoft Certified: Azure AI Engineer Associate</li>
+          </ul>
         </div>
       </div>
+      <div class="video-section">
+        <h2>Portfolio Video</h2>
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/watch?v=Ez8F0nW6S-w"
+          frameborder="0"
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowfullscreen
+        ></iframe>
+      </div>
     </div>
+    <script src="js.js"></script>
   </body>
 </html>

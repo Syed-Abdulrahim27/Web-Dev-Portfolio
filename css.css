@@ -1,3 +1,4 @@
+/* Reset default styles */
 * {
   margin: 0;
   padding: 0;
@@ -5,207 +6,307 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  background-color: #f5f5f5; /* Light gray background for the page */
+  color: #333;
 }
 
+/* Navbar Styles */
 .navbar {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #333;
-  padding: 10px 20px;
+  background-color: #2f4f4f; /* Slate gray background */
+  padding: 15px 30px;
 }
 
-.navbar .logo a {
-  color: white;
+.nav_logo a {
+  color: #ffffff; /* White text */
   text-decoration: none;
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
 }
-.navbar .logo a:hover {
-  color: yellow;
+
+.nav_menu_btn {
+  font-size: 1.8rem;
+  color: #ffffff; /* White text */
+  cursor: pointer;
 }
 
 .nav-links {
   list-style-type: none;
+  display: none;
+  flex-direction: column;
+  background-color: #2f4f4f; /* Slate gray background */
+  position: absolute;
+  top: 60px;
+  right: 30px;
+  width: 220px;
+  text-align: right;
+}
+
+.nav-links.open {
   display: flex;
 }
 
 .nav-links li {
-  margin: 0 15px;
+  margin: 12px 0;
 }
 
 .nav-links a {
-  color: white;
+  color: #ff6f61; /* Coral color for text */
   text-decoration: none;
   font-size: 18px;
+  padding: 12px;
 }
 
 .nav-links a:hover {
-  color: yellow;
+  color: #e64a19; /* Darker coral on hover */
 }
 
-@media (max-width: 768px) {
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    background-color: #333;
-    position: absolute;
-    top: 60px;
-    right: 20px;
-    width: 200px;
-    text-align: right;
-  }
-
-  .nav-links li {
-    margin: 10px 0;
-  }
-}
+/* Label and Select Styles */
 label {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
   color: #333;
   margin-right: 10px;
 }
 
 select {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: 16px;
-  padding: 5px;
+  padding: 8px;
   border-radius: 5px;
   border: 1px solid #ccc;
-  background-color: #f9f9f9;
+  background-color: #ffffff; /* White background */
   color: #333;
   outline: none;
 }
 
 select:hover {
-  border-color: #888;
+  border-color: #ff6f61; /* Coral border on hover */
 }
 
 select:focus {
-  border-color: #007bff;
-  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+  border-color: #e64a19; /* Darker coral border on focus */
+  box-shadow: 0 0 5px rgba(230, 74, 25, 0.5); /* Subtle coral shadow */
 }
+
+/* Main Content Styles */
 .body {
-  background-color: rgb(255, 25, 0);
-  height: 650px;
+  background-color: #ffffff; /* White background */
+  height: 100vh;
   width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   text-align: center;
-
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
+  padding: 20px;
 }
+
 .img {
   text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
+
 .name {
   font-weight: bold;
-  font-size: xx-large;
-  color: white;
+  font-size: 2rem;
+  color: #2f4f4f; /* Slate gray for name */
 }
+
 .details h3 {
-  color: white;
+  color: #333; /* Dark text color */
   margin-top: 10px;
 }
+
 .icons {
   display: flex;
   justify-content: center;
-  text-align: center;
-  margin-top: 10px;
+  margin-top: 20px;
 }
+
 .icons i {
-  margin-right: 10px;
-  font-size: larger;
-  color: white;
+  margin-right: 15px;
+  font-size: 1.6rem;
+  color: #ff6f61; /* Coral icons */
 }
+
 .icons i:hover {
   transform: scale(1.1);
   cursor: pointer;
-  color: black;
+  color: #e64a19; /* Darker coral on hover */
 }
+
 .body-2 {
   display: flex;
   justify-content: space-around;
   text-align: center;
+  flex-wrap: wrap;
+  gap: 20px;
 }
-.Courses {
-  background-color: black;
-  border-radius: 20px;
-  padding: 10px;
-}
-.Courses h2 {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.Courses li {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-}
-.Awards {
-  background-color: rgb(44, 188, 59);
-  border-radius: 20px;
-  padding: 10px;
-}
-.Awards h2 {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.Awards li {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-}
-.Projects {
-  background-color: rgb(235, 170, 56);
-  border-radius: 20px;
-  padding: 10px;
-}
-.Projects h2 {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.Projects li {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-}
-.certifs {
-  background-color: rgb(48, 189, 245);
-  border-radius: 20px;
-  padding: 10px;
-}
-.certifs h2 {
-  color: white;
-  font-weight: bold;
-  text-decoration: underline;
-}
-.certifs li {
-  color: white;
-  text-align: center;
-  margin-top: 5px;
-}
+
+.Courses,
+.Projects,
+.Awards,
+.certifs,
 .edu {
-  background-color: black;
   border-radius: 20px;
-  padding: 10px;
+  padding: 20px;
+  background-color: #ffffff; /* White background for sections */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+.Courses {
+  background-color: #2f4f4f; /* Slate gray background */
+}
+
+.Courses h2 {
+  color: #ff6f61; /* Coral color */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Courses li {
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin-top: 5px;
+}
+
+.Projects {
+  background-color: #e0f2f1; /* Light teal background */
+}
+
+.Projects h2 {
+  color: #2f4f4f; /* Slate gray color */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Projects li {
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin-top: 5px;
+}
+
+.Awards {
+  background-color: #e0f2f1; /* Light teal background */
+}
+
+.Awards h2 {
+  color: #2f4f4f; /* Slate gray color */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.Awards li {
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin-top: 5px;
+}
+
+.certifs {
+  background-color: #f5f5f5; /* Light gray background */
+}
+
+.certifs h2 {
+  color: #2f4f4f; /* Slate gray color */
+  font-weight: bold;
+  text-decoration: underline;
+}
+
+.certifs li {
+  color: #333; /* Dark text color */
+  text-align: center;
+  margin-top: 5px;
+}
+
+.edu {
+  background-color: #e0f2f1; /* Light teal background */
   margin-top: 10px;
 }
+
 .edu h2 {
-  color: white;
+  color: #2f4f4f; /* Slate gray color */
   font-weight: bold;
   text-decoration: underline;
 }
+
 .edu li {
-  color: white;
+  color: #333; /* Dark text color */
   text-align: center;
   margin-top: 5px;
+}
+
+/* Responsive Styles */
+@media (min-width: 768px) {
+  .nav-links {
+    display: flex;
+    flex-direction: row;
+    position: static;
+    background-color: transparent;
+    width: auto;
+    margin: 0;
+  }
+
+  .nav-links li {
+    margin: 0 15px;
+  }
+
+  .nav_menu_btn {
+    display: none;
+  }
+}
+
+/* Video Section Styling */
+.video-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.video-section h2 {
+  font-size: 24px;
+  color: #2f4f4f; /* Slate gray color */
+  margin-bottom: 15px;
+}
+
+iframe {
+  max-width: 100%;
+  height: auto;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Optional: Add responsiveness for smaller screens */
+@media (max-width: 768px) {
+  .video-section h2 {
+    font-size: 20px;
+  }
+
+  iframe {
+    width: 100%;
+    height: auto;
+  }
+}
+.Courses {
+  background-color: #f6c1c1;
+}
+
+.Projects {
+  background-color: #f8e6a4;
+}
+
+.Awards {
+  background-color: #a2d5f2;
+}
+
+.certifs {
+  background-color: #c9e4c5;
+}
+
+.edu {
+  background-color: #f9d5e5;
 }
