@@ -49,6 +49,7 @@ ScrollReveal().reveal(".certifs", {
   ...scrollRevealOption,
   delay: 2500,
 });
+
 const profileData = {
   name: "Syed Abdul Rahim",
   job: "Web Developer in Pakistan",
@@ -97,3 +98,11 @@ document.getElementById("linkedin").parentElement.href =
   profileData.socialLinks.linkedin;
 document.getElementById("github").parentElement.href =
   profileData.socialLinks.github;
+
+// Populate Education
+const educationList = document.getElementById("education");
+profileData.education.forEach((edu) => {
+  const li = document.createElement("li");
+  li.textContent = edu;
+  educationList.appendChild(li);
+});
