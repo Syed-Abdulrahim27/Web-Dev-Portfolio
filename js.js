@@ -17,36 +17,3 @@ navLinks.addEventListener("click", () => {
   navLinks.classList.remove("open");
   menuBtnIcon.setAttribute("class", "fa-solid fa-bars");
 });
-
-// ScrollReveal options
-const scrollRevealOption = {
-  origin: "bottom",
-  distance: "50px",
-  duration: 1000,
-};
-ScrollReveal().reveal(".edu", {
-  ...scrollRevealOption,
-  origin: "right",
-  delay: 500,
-});
-ScrollReveal().reveal(".body-2", {
-  ...scrollRevealOption,
-  origin: "right",
-  delay: 500,
-});
-ScrollReveal().reveal(".Courses", {
-  ...scrollRevealOption,
-  delay: 1000,
-});
-ScrollReveal().reveal(".Projects", {
-  ...scrollRevealOption,
-  delay: 1500,
-});
-ScrollReveal().reveal(".Awards", {
-  ...scrollRevealOption,
-  delay: 2000,
-});
-ScrollReveal().reveal(".certifs", {
-  ...scrollRevealOption,
-  delay: 2500,
-});
