@@ -1,0 +1,36 @@
+{
+  "name": "Syed Abdul Rahim",
+  "job": "Web Developer in Pakistan",
+  "profilePic": "./profilepic.enc",
+  "socialLinks": {
+    "instagram": "https://instagram.com",
+    "linkedin": "https://linkedin.com",
+    "github": "https://github.com"
+  },
+  "About": "I am a passionate and dedicated web developer with a strong foundation in front-end and back-end technologies. With experience in creating responsive, user-friendly websites and web applications, I focus on delivering intuitive and impactful digital experiences. My expertise lies in HTML, CSS, JavaScript, and modern frameworks like React, with a keen eye for detail and an enthusiasm for learning the latest industry trends. I enjoy tackling complex problems, optimizing code, and improving user experiences through innovative solutions. Whether working on a team or independently, I strive to bring creativity and technical expertise to every project I undertake. When I’m not coding, you can find me exploring new tech, contributing to open-source projects, or honing my skills through continuous learning.",
+  "education": [
+    "A-Levels from KIMS",
+    "BSCS in Computer Science",
+    "Masters in Computer Science"
+  ],
+  "courses": ["HTML/CSS", "Javascript", "React", "Mobile App Development"],
+  "projects": [
+    "Snake Game",
+    "Face Detection",
+    "Socket Programming",
+    "Flight Schedule Mobile App"
+  ],
+  "awards": [
+    "Hackathon Prizes",
+    "Google Code Jam / Kick Start",
+    "Microsoft Imagine Cup",
+    "TopCoder Open"
+  ],
+  "certifications": [
+    "Oracle Certified Professional: Java SE",
+    "Cloud Computing",
+    "Cybersecurity",
+    "Microsoft Certified: Azure AI Engineer Associate"
+  ],
+  "portfolioVideo": "./Web Design Promotional Video - After Effects Template.mp4"
+}

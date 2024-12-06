@@ -4,7 +4,9 @@
   padding: 0;
   box-sizing: border-box;
 }
-
+html {
+  scroll-behavior: smooth;
+}
 body {
   font-family: "Poppins", sans-serif;
   background-color: #f5f5f5;
@@ -19,7 +21,9 @@ body {
   background-color: #2f4f4f;
   padding: 15px 30px;
 }
-
+.navbar label {
+  margin-left: 30px;
+}
 .nav_logo a {
   color: #ffffff;
   text-decoration: none;
@@ -37,12 +41,13 @@ body {
   list-style-type: none;
   display: none;
   flex-direction: column;
-  background-color: #2f4f4f;
+  background-color: #508383;
   position: absolute;
   top: 60px;
   right: 30px;
   width: 220px;
-  text-align: right;
+  text-align: center;
+  border-radius: 30px;
 }
 
 .nav-links.open {
@@ -53,15 +58,16 @@ body {
   margin: 12px 0;
 }
 
-.nav-links a {
+.nav-links li a {
   color: #ff6f61;
   text-decoration: none;
   font-size: 18px;
   padding: 12px;
+  transition: color 0.2s ease-in-out 0.1s;
 }
 
-.nav-links a:hover {
-  color: #e64a19;
+.nav-links li a:hover {
+  color: white;
 }
 
 label {
@@ -91,22 +97,40 @@ select:focus {
   box-shadow: 0 0 5px rgba(230, 74, 25, 0.5);
 }
 
-.body {
+body {
   background-color: #ffffff;
-  height: 100vh;
+  background-image: url("./images.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 150vh;
   width: 100%;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   text-align: center;
   border-bottom-right-radius: 20px;
   border-bottom-left-radius: 20px;
-  padding: 20px;
+
+  margin: 0;
 }
 
 .img {
   text-align: center;
   margin-top: 20px;
+}
+
+.img img {
+  width: 20%;
+  height: auto; /* Maintains aspect ratio */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.img img:hover {
+  transform: scale(1.05);
 }
 
 .name {
@@ -128,14 +152,15 @@ select:focus {
 
 .icons i {
   margin-right: 15px;
-  font-size: 1.6rem;
+  font-size: 2.5rem;
   color: #ff6f61;
+  transition: color 0.2s ease-in-out 0.1s;
 }
 
 .icons i:hover {
   transform: scale(1.1);
   cursor: pointer;
-  color: #e64a19;
+  color: rgb(90, 109, 255);
 }
 
 .body-2 {
@@ -152,9 +177,11 @@ select:focus {
 .certifs,
 .edu {
   border-radius: 20px;
-  padding: 20px;
+  padding: 30px;
   background-color: #ffffff;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  line-height: 30px;
+  margin-top: 20px;
 }
 
 .Courses {
@@ -176,7 +203,6 @@ select:focus {
 .Projects {
   background-color: #e0f2f1;
 }
-
 .Projects h2 {
   color: #2f4f4f;
   font-weight: bold;
@@ -185,7 +211,7 @@ select:focus {
 
 .Projects li {
   color: #333;
-  text-align: center;
+  text-align: left;
   margin-top: 5px;
 }
 
@@ -224,6 +250,8 @@ select:focus {
 .edu {
   background-color: #e0f2f1;
   margin-top: 10px;
+  margin-left: 10px;
+  margin-right: 15px;
 }
 
 .edu h2 {
@@ -231,15 +259,37 @@ select:focus {
   font-weight: bold;
   text-decoration: underline;
 }
+.About {
+  background-color: #e0f2f1;
+  margin-top: 10px;
+  margin-left: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  border-radius: 30px;
+}
 
+.About h2 {
+  margin-top: 20px;
+  color: #2f4f4f;
+  font-weight: bold;
+  text-decoration: underline;
+}
+.About p {
+  font-size: large;
+  padding: 5px;
+  line-height: 40px;
+}
+.Aboutandedu {
+  display: flex;
+}
 .edu li {
   color: #333;
-  text-align: center;
+  text-align: left;
   margin-top: 5px;
 }
 
 /* Responsive Styles */
-@media (min-width: 768px) {
+@media (min-width: 900px) {
   .nav-links {
     display: flex;
     flex-direction: row;
@@ -270,22 +320,31 @@ select:focus {
   margin-bottom: 15px;
 }
 
-iframe {
-  max-width: 100%;
-  height: auto;
-  border: none;
+.video-section iframe,
+.video-section video {
+  width: 100%; /* Full width of the container */
+  height: 500px; /* Increase the height of the video */
+  max-width: 1200px; /* Maximum width to ensure it doesn't stretch too much on large screens */
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  margin: 20px auto;
+  display: block;
 }
-
 /*responsiveness for smaller screens */
 @media (max-width: 768px) {
+  .Aboutandedu {
+    flex-direction: column;
+  }
+
+  .edu {
+    margin-top: 20px;
+  }
   .video-section h2 {
     font-size: 20px;
   }
 
   iframe {
-    width: 100%;
+    width: 50%;
     height: auto;
   }
 }
@@ -307,4 +366,19 @@ iframe {
 
 .edu {
   background-color: #f9d5e5;
+}
+.footer {
+  background-color: #2f4f4f;
+  color: white;
+  padding: 80px 0;
+  position: relative;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+}
+.footer h2 {
+  color: #e0f2f1;
+}
+.footer:hover {
+  background-color: #e64a19;
 }

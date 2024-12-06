@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile</title>
+    <title>Portfolio</title>
     <link rel="stylesheet" href="css.css" />
     <link
       rel="stylesheet"
@@ -18,7 +18,7 @@
     <!-- navbar -->
     <nav class="navbar">
       <div class="nav_logo">
-        <a href="#">Profile</a>
+        <a href="#">Syed Abdul Rahim</a>
       </div>
       <div class="nav_menu_btn" id="menu-btn">
         <i class="fa-solid fa-bars"></i>
@@ -26,10 +26,11 @@
       <ul class="nav-links">
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#video">Video</a></li>
       </ul>
-      <label for="languages">Choose a language:</label>
+      <label for="languages" style="color: white">Choose a language:</label>
       <select id="languages" name="languages">
         <option value="en">English</option>
         <option value="ar">Arabic</option>
@@ -38,7 +39,7 @@
     </nav>
 
     <!-- Main -->
-    <div class="body">
+    <div class="body" id="Body">
       <div class="img">
         <img id="profile-pic" src="" alt="" />
       </div>
@@ -47,14 +48,26 @@
           <h2 class="name" id="name"></h2>
           <h3 id="job"></h3>
           <div class="icons">
-            <i class="fa-brands fa-instagram" id="instagram"></i>
-            <i class="fa-brands fa-linkedin" id="linkedin"></i>
-            <i class="fa-brands fa-github" id="github"></i>
+            <a href="#" id="instagram" aria-label="Instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="#" id="linkedin" aria-label="LinkedIn">
+              <i class="fa-brands fa-linkedin"></i>
+            </a>
+            <a href="#" id="github" aria-label="GitHub">
+              <i class="fa-brands fa-github"></i>
+            </a>
           </div>
         </div>
-        <div class="edu">
-          <h2>Education</h2>
-          <ul id="education"></ul>
+        <div class="Aboutandedu">
+          <div class="About" id="about">
+            <h2>About Me</h2>
+            <p id="About"></p>
+          </div>
+          <div class="edu" id="education">
+            <h2>Education</h2>
+            <ul id="education"></ul>
+          </div>
         </div>
       </div>
       <div class="body-2">
@@ -62,7 +75,7 @@
           <h2>Short Courses</h2>
           <ul id="courses"></ul>
         </div>
-        <div class="Projects">
+        <div class="Projects" id="projects">
           <h2>Projects</h2>
           <ul id="projects"></ul>
         </div>
@@ -75,18 +88,19 @@
           <ul id="certifications"></ul>
         </div>
       </div>
-      <div class="video-section">
+      <div class="video-section" id="video">
         <h2>Portfolio Video</h2>
         <iframe
           id="portfolio-video"
-          width="560"
-          height="315"
+          width="1000"
+          height="563"
           src=""
           frameborder="0"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         ></iframe>
       </div>
+      <div class="footer" id="footer"></div>
     </div>
     <script src="js.js"></script>
   </body>
